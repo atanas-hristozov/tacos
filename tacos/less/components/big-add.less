@@ -1,0 +1,45 @@
+@import 'var.less';
+
+.big-add{
+    padding: 50px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    &-description{
+        font-family:  "Segoe UI";
+        font-weight: bold;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+        letter-spacing: -0.5px;
+        h4{
+            font-size: 26px;
+            margin: 10px 0 10px 0;
+        }
+        p{
+            
+            font-size: 16px;
+            margin: 10px 0 15px 0;
+        }
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    a{
+        background-color: @color-yellow;
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:@mobile){
+    .big-add{
+        flex-direction: row;
+        align-items: center;
+    }
+}
